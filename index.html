@@ -3,6 +3,9 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -10,51 +13,122 @@
 <body>
     <div id="sidebar">
         <div id="main">
-            <p><img src="icons/dashboard.svg" alt="">Dashboard</p>
-        </div>
-        <div class="panel">
-            <p>
-                <img src="icons/home.svg" alt="">
-                Home
-            </p>
-            
-            <p>
-                <img src="icons/profile.svg" alt="">
-                Profile
-            </p>
-            
-            <p>
-                <img src="icons/message.svg" alt="">
-                Messages
-            </p>
-            
-            <p>
-                <img src="icons/history.svg" alt="">History
-            </p>
-            
-            <p><img src="icons/tasks.svg" alt="">Tasks</p>
-            
-            <p><img src="icons/comm.svg" alt="">Communication
-            </p>
+            <img src="icons/dashboard.svg" alt="">Dashboard
         </div>
         <div class="panel">
             
-            <p><img src="icons/settings.svg" alt="">Settings</p>
+            <div><img src="icons/home.svg" alt="">Home</div>          
+            <div><img src="icons/profile.svg" alt="">Profile</div>       
+            <div><img src="icons/message.svg" alt="">Messages</div>        
+            <div><img src="icons/history.svg" alt="">History</div>           
+            <div><img src="icons/tasks.svg" alt="">Tasks</div>
+            <div><img src="icons/comm.svg" alt="">Communities</div>
             
-            <p><img src="icons/support.svg" alt="">Support</p>
+        </div>
+        <div class="panel" id="panel-two">
             
-            <p><img src="icons/privacy.svg" alt="">Privacy</p>
+            <div><img src="icons/settings.svg" alt="">Settings</div>
+            
+            <div><img src="icons/support.svg" alt="">Support</div>
+            
+            <div><img src="icons/privacy.svg" alt="">Privacy</div>
         </div>
     </div>
     <div id="header">
-        header
-        <label for="searchbar"><img src="icons/magnify.svg" style="height: 25px;" alt=""></label>
-        <input type="text" id="searchbar">
+            <div id="search">
+                <label for="searchbar"><img src="icons/magnify.svg" style="height: 25px;" alt=""></label>
+                <input type="text" id="searchbar">
+            </div>
+            <div id="profile">
+                <img src="icons/bell.svg" alt="">
+                <img src="avatar.webp" alt="">
+                <p>apu</p>
+            </div>
+            <div id="name">
+                <img src="avatar.webp" alt="">
+                <p><span style="font-size: 14px;">Hi, there</span> <br> <span style="font-size: 24px; font-weight: bold;">Apu (@apu)</span></p>
+            </div>
 
-        <img src="icons/bell.svg" alt="">
+            <div id="interact">
+                <button type="button">New</button>
+                <button type="button">Upload</button>
+                <button type="Share">Share</button>
+            </div>
     </div>
-    <div id="projects"></div>
-    <div id="announcemnts"></div>
-    <div id="trending"></div>
+    <div id="projects">
+        <p style="color: black;">Your Projects</p>
+        <div class="card">
+            <div class="card-title">Landing Page</div>
+            <div class='project-desc'>Landing Page Project Submission for Odin Project <a href="https://www.theodinproject.com/lessons/foundations-landing-page">Assignment</a>
+            </div>
+            <div class="icons"><img src="icons/star-plus-outline.svg" alt=""><img src="icons/eye-plus.svg" alt=""><img src="icons/fork.svg" alt=""></div>
+        </div>
+        <div class="card">
+            <div class="card-title">Sign Up form</div>
+            <div class='project-desc'>Submission for Odin Project <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form">Assignment</a></div>
+            <div class="icons"><img src="icons/star-plus-outline.svg" alt=""><img src="icons/eye-plus.svg" alt=""><img src="icons/fork.svg" alt=""></div>
+        </div>
+        <div class="card">
+            <div class="card-title">Calculator</div>
+            <div class='project-desc'>Calculator Project for </div>
+            <div class="icons"><img src="icons/star-plus-outline.svg" alt=""><img src="icons/eye-plus.svg" alt=""><img src="icons/fork.svg" alt=""></div>
+        </div>
+        <div class="card">
+            <div class="card-title">Rock Paper Scissors</div>
+            <div class='project-desc'>Odin Project Submission for Rock-Paper-Scissors</div>
+            <div class="icons"><img src="icons/star-plus-outline.svg" alt=""><img src="icons/eye-plus.svg" alt=""><img src="icons/fork.svg" alt=""></div>
+        </div>
+        <div class="card">
+            <div class="card-title">Landing Page</div>
+            <div class='project-desc'>Landing Page Project Submission for Odin Project <a href="https://www.theodinproject.com/lessons/foundations-landing-page">Assignment</a>
+            </div>
+            <div class="icons"><img src="icons/star-plus-outline.svg" alt=""><img src="icons/eye-plus.svg" alt=""><img src="icons/fork.svg" alt=""></div>
+        </div>
+        <div class="card">
+            <div class="card-title">Landing Page</div>
+            <div class='project-desc'>Landing Page Project Submission for Odin Project <a href="https://www.theodinproject.com/lessons/foundations-landing-page">Assignment</a>
+            </div>
+            <div class="icons"><img src="icons/star-plus-outline.svg" alt=""><img src="icons/eye-plus.svg" alt=""><img src="icons/fork.svg" alt=""></div>
+        </div>
+    </div>
+    <div class="scrollboard" id="announcements">
+        <span style="font-size:18px;">Announcements</span>
+        <div class="posts">
+            <div class="post"><div class="announce_name">Announcement name <br></div> Mauris porttitor sit amet lectus nec porttitor. <hr></div>
+            <div class="post"><div class="announce_name">Announcement name <br></div> Mauris porttitor sit amet lectus nec porttitor. <hr></div>
+            <div class="post"><div class="announce_name">Announcement name <br></div> Mauris porttitor sit amet lectus nec porttitor.</div>
+        </div>
+    </div>
+    <div class="scrollboard" id="trending" >
+        <span style="font-size:18px;">Trending</span>
+        <div class="posts">
+            <div class="post">
+                <img src="avatar.webp" alt="">
+                <div class="username">@user1</div>
+                firstname lastname
+                <hr>
+            </div>
+            
+            <div class="post">
+                <img src="avatar.webp" alt="">
+                <div class="username">@user2</div>
+                firstname lastname
+                <hr>
+            </div>
+            
+            <div class="post">
+                <img src="avatar.webp" alt="">
+                <div class="username">@user3</div>
+                firstname lastname
+                <hr>
+            </div>
+            
+            <div class="post">
+                <img src="avatar.webp" alt="">
+                <div class="username">@user4</div>
+                firstname lastname
+            </div>
+        </div>
+    </div>
 </body>
 </html>
